@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="weather.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="weather">
+      <form id="search">
+        <input
+          type="search"
+          placeholder="SEARCH"
+          autocomplete="off"
+          id="input"
+        />
+
+        <input type="submit" value="Search" class="enter" id="enter" />
+
+        <input type="submit" value="Current" class="current" id="current" />
+      </form>
+
+      <h2 class="location" id="city">Lagos</h2>
+      <p class="location" id="date">Sat 12:08AM</p>
+
+      <h1>
+        <div class="temp" id="temp">33℃</div>
+        <div class="emoji">⛅</div>
+        <div class="cloud" id="cloud">Cloudy</div>
+      </h1>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
